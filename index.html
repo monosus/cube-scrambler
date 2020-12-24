@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrambler（仮）</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="l-header">
+    <div class="l-header__in l-block">
+      <h1 class="l-header__title">Scrambler（仮）</h1>
+    </div>
+  </header>
+
+  <main class="l-main">
+
+    <section class="l-section l-block">
+      <h2 class="c-heading" id="sign"></h2>
+      <button class="c-button" id="refresh">更新</button>
+
+      <div class="p-net">
+        <div class="p-net__in">
+          <div class="p-net__figure">&nbsp;</div>
+          <div class="p-net__figure">
+            <ul class="p-net-list" id="sideU">
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+            </ul>
+          </div>
+          <div class="p-net__figure">&nbsp;</div>
+          <div class="p-net__figure">&nbsp;</div>
+        </div>
+        <div class="p-net__in">
+          <div class="p-net__figure">
+            <ul class="p-net-list" id="sideL">
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+            </ul>
+          </div>
+          <div class="p-net__figure">
+            <ul class="p-net-list" id="sideF">
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+            </ul>
+          </div>
+          <div class="p-net__figure">
+            <ul class="p-net-list" id="sideR">
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+            </ul>
+          </div>
+          <div class="p-net__figure">
+            <ul class="p-net-list" id="sideB">
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-net__in">
+          <div class="p-net__figure">&nbsp;</div>
+          <div class="p-net__figure">
+            <ul class="p-net-list" id="sideD">
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+              <li class="p-net-list__item"></li>
+            </ul>
+          </div>
+          <div class="p-net__figure">&nbsp;</div>
+          <div class="p-net__figure">&nbsp;</div>
+        </div>
+      </div> 
+
+      <p class="c-text">This information is based on competition results owned and maintained by the World Cube Assocation, published at <a href="https://worldcubeassociation.org/results" target="_blank">https://worldcubeassociation.org/results</a> as of September 8, 2020.</p>
+    </section>
+
+  </main>
+
+  <!-- ローディング画面 -->
+  <div class="p-spinner" id="loading">
+    <div class="p-spinner__in">
+      <div class="p-spinner__figure">
+          <div class="p-spinner__item"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="/assets/js/scramble.js"></script>
+  <!--「d3-dsv」のライブラリ読み込み-->
+  <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+</body>
+</html>
